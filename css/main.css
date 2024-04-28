@@ -57,8 +57,8 @@ body.active {width: 100vw; height: 100vh; box-sizing: border-box; overflow: hidd
 #gnbArea .gnb.depth1  li:hover .depth2.grid {display: grid;}
 
 .quickMenu {width: 160px; float: right; text-align: left; position: relative;}
-.quickMenu .quick {display: inline-block; width: 32px; height: 80px; background: url(/img/icon/ico_hd_quick.png) no-repeat center left; margin: 0 10px 10px 10px;}
-.quickMenu .quick.search {background: url(/img/icon/ico_hd_quick.png) no-repeat center left -34px;}
+.quickMenu .quick {display: inline-block; width: 32px; height: 80px; background: url(../img/icon/ico_hd_quick.png) no-repeat center left; margin: 0 10px 10px 10px;}
+.quickMenu .quick.search {background: url(../img/icon/ico_hd_quick.png) no-repeat center left -34px;}
 .btn_menu {position: fixed; top: 66px; width: 28px; height: 18px; margin-left: 16px;}
 .btn_menu span {position: absolute; top: 0; width: 28px;height: 2px; background: #fff;}
 .btn_menu span.line_m {top: 50%; margin-top: -1px; }
@@ -80,7 +80,7 @@ body.active {width: 100vw; height: 100vh; box-sizing: border-box; overflow: hidd
 .slickList {width: 100%; padding-top: 70px;}
 .movSlideArea .mainTit {color:#fff; font-size: 2.8rem; font-weight: 700; line-height:1.6; letter-spacing: -1.4px;}
 .btn_go {color: #fff; font-size: 1.8rem; font-weight: 300; padding-right: 40px; position: relative;}
-.btn_go::after {content: ''; position: absolute; right: 0; top:50%; width: 32px; height: 8px; background: url(/img/icon/mbgoarr.png) no-repeat; transform: translateY(-50%);}
+.btn_go::after {content: ''; position: absolute; right: 0; top:50%; width: 32px; height: 8px; background: url(../img/icon/mbgoarr.png) no-repeat; transform: translateY(-50%);}
 /* slick - 버튼 커스텀 */
 .slick_indicator {position: relative; bottom: -20px; left: 20px;}
 .slick_indicator button {width: 24px; height: 24px; cursor: pointer; margin-right: 10px; opacity: 0.4;}
