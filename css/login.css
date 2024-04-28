@@ -1,0 +1,150 @@
+#wrap.subPage .header {position: relative; }
+#wrap.subPage {background: linear-gradient(125deg, #5d2e85, #484689);}
+label {display: none;}
+input[type="text"] {color: inherit;}
+
+
+/* #loginPage */
+#loginPage, .sub_sec {padding: unset; color: #fff;}
+#loginPage .container {width: 1280px;}
+.snb {padding: 50px 0; text-align: center; position: relative;}
+.snb h3 {font-size: 3.2rem; font-weight: 500; display: inline-block; padding-right: 40px; background: url(../img/icon/page_arrow_down.png) no-repeat right; cursor: pointer;}
+.snb .btn_next {position: absolute; right:0; top:50%; transform: translateY(-50%);padding-right: 105px; background: url(../img/icon/page_arrow_next.png) no-repeat right; opacity: 0.6;}
+.snb .btn_next.arrow_prev {padding-right: unset; padding-left: 105px; right: unset; left:0; background: url(../img/icon/page_arrow_prev.png) no-repeat left;}
+.snb .btn_next:hover {opacity: 1;}
+.snb_popup {position: absolute; left:50%; transform: translateX(-50%);width: 250px; max-height: 460px; overflow-y: scroll;background: #fff; border: 1px solid #ab92d9; box-shadow: 2px 2px 16px rgba(117,46,138,.2); z-index: 50; padding: 20px; box-sizing: border-box; display: none; margin-top: 30px;}
+.snb_popup li a {color: #4d3494; display: block; padding: 10px 0; box-sizing: border-box; font-weight: 400;}
+.snb_popup li:hover a, .snb_popup li a.active {color: #fff; background: #4d3494;}
+/* 팝업박스 */
+.snb_popup.active {display: block;}
+/* loginWrap */
+#loginPage input {opacity: 1; font-size: 1.6rem; width: 100%; box-sizing: border-box;}
+.loginWrap {padding: 80px 0; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
+.loginWrap  h2 {font-size: 3rem; font-weight: 800; margin-bottom: 40px;}
+.loginForm .formTop {width: 480px; border: 1px solid #e0e0e0; background: #f6f6f6; border-radius: 4px; box-sizing: border-box;}
+.loginForm  input {padding: 20px 18px; color: #000}
+.loginForm input:first-child{border-bottom: 1px solid #e0e0e0;}
+input[type="password"]:focus {outline: none;}
+.loginForm input::placeholder {font-size: 1.4rem;}
+.btn_submit {display: block; margin-top: 30px; background: pink; width: 100%; padding: 20px 30px; font-size: 1.8rem; color: #4d3494; background: #705bad; border-radius: 4px; transition: all 0.2s; cursor: pointer; box-shadow: 0 0 5px rgba(91,66,163,0.2); font-weight: 500;}
+.btn_submit:hover {background: #fff; color: #4d3494;}
+.siteWrap {margin-top: 30px;}
+.siteWrap a {display: inline-block; font-size: 1.3rem; padding-right: 24px; background: url(../img/icon/ico_member_arrow.png) no-repeat right; margin: 0 10px; font-weight: 300;}
+.login_info {margin-top: 50px; text-align: center; opacity: 0.4; font-size: 1.5rem; line-height: 1.7;}
+
+/* searchPage */
+section.sub_sec > .container {width: 1280px;}
+.sub_sec .bg_w {background: #fff; color: #4d3494}
+.sub_sec .bg_w .container {padding: 80px 15px; width: 1280px;}
+/* tabList */
+.searchWrap .tabList {display: flex; gap:20px; margin-bottom: 60px;}
+.tabList li button {font-size: 1.7rem; padding: 10px 20px 12px 20px; color: #9185ae; font-weight: 500; border: 2px solid #eae1fd; cursor: pointer;}
+.tabList li.active button {border-color:  #4f3584; color:  #4f3584;}
+.tabBox {padding: 30px 0 40px; border: 1px solid #f1f1f1;}
+.totalList form {width: 100%; box-sizing: border-box; display: flex; justify-content: center; gap: 20px}
+.totalList select {
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+.selectCustom {border: 4px solid #721faf; border-radius: 0 10px 0 0; display: flex; position: relative;}
+.tabBox select {padding: 0 15px; font-size: 1.7rem; color: #721faf; line-height: 50px; height: 50px;  box-sizing: border-box; padding: 0 20px; width: 150px; font-size: 1.5rem;}
+.tabBox select#form_type {width: 100px}
+.totalList .select_arrow {
+    position: absolute;
+    width: 0; height: 0;
+    right:20px; top:50%; transform: translateY(-50%);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top:7px solid #721faf;
+}
+.searchBox .select_arrow {right: unset; left: 80px}
+.btn_search {width: 50px; height: 50px; background: #000; background: url(../img/icon/ico_arc_search.png) no-repeat center;}
+.selectCustom input[type="text"] {color:#111; width: 800px; font-size: 1.6rem; opacity: 1;}
+/* 국가 */
+.nation {padding: 0 40px}
+.nation a {display: inline-block; padding: 5px 25px; border: 2px solid #eae1fd; margin: 8px 10px 8px 0; color: #9185ae; transition: all 0.2s;}
+.nation a:hover, .nation a.active {background: #eae1fd;}
+/* 인덱스 */
+.tab_index {margin: 0 50px; display: flex; flex-direction: column; color: #222; align-items: center; justify-content: center; width: 1100px;}
+.tab_index ul {display: flex; border: 1px solid #f1f1f1; align-items: center; justify-content: center; background: #f1f1f1; }
+.tab_index ul+ul {margin-top: -1px;}
+.tab_index ul li {padding: 10px; box-sizing: border-box; width: calc(100% - 80px);}
+.tab_index ul li.idx_hd {width: 80px; font-weight: 500; box-sizing: border-box;}
+.tab_index ul li+li {background: #fff;}
+.tab_index ul li a {display: inline-block; width: 35px; aspect-ratio: 1/1; background: #f4f4f4; border-radius: 50%; margin: 5px; font-size: 1.3rem; text-align: center; box-sizing: border-box; padding-top: 7px; border: 1px solid transparent;}
+.tab_index ul li a:hover {background: #fff; border-color: #f4f4f4;}
+.tabBox > div {display: none;}
+.tabBox > div.active {display: block;}
+
+/* swiff 개요 */
+#swiffMain .snb_popup {height: auto;}
+.swiff figure {float: left; width: 33%;box-sizing: border-box; padding: 0 15px;}
+.swiff figure img {max-width: 100%;}
+.swiff .swiff_infoArea {float: left; width: 66%; box-sizing: border-box; padding: 0 15px 0 30px; margin-bottom: 50px;}
+.sec_title {font-size: 2.4rem; font-weight: bold; letter-spacing: -1px; margin-bottom: 15px;}
+.swiff_infoArea .infoList {color: #222;}
+.swiff_infoArea .infoList > li {display: flex; padding: 20px 0 25px; border-bottom: 1px solid #e0e0e0;}
+.swiff_infoArea .infoList > li:last-child {border: none;}
+.infoList li .listTit {width: 180px; margin-left: 5px; font-size: 1.7rem; font-weight: 500;}
+.infoList li p:nth-child(2), .subList {padding-left: 15px; border-left: 1px solid #f5f5f5; opacity: 0.7;}
+.subList li{padding: 3px 0; }
+.subList li::before {content: ''; display: inline-block; width: 2px; aspect-ratio: 1/1; background: #222; border-radius: 50%; vertical-align: middle; margin-right: 15px; opacity: 0.7;}
+/* swiff- aboutSwiff */
+.aboutSwiff, .swiff_special {padding: 50px 0; border-top: 1px solid #e0e0e0; clear: both;}
+.swiff_special {padding: 50px 0 0}
+.aboutSwiff p:last-child, .specList li p:last-child{color: #555; font-size: 1.5rem; opacity: 0.8;}
+.sec_subTit {margin: 30px 0 20px; font-size: 2.2rem; color: #444; font-weight: bold;}
+.swiff_special .specList li {margin-bottom: 50px;}
+.swiff_special .specList li:last-child {margin: unset;}
+/* footer sponser */
+footer .ft_sponser {background: #fff;}
+footer .ft_sponser .ft_container { width: 1280px; margin: 0 auto; display: flex; align-items: center; justify-content:space-between;}
+#ftSlick {width: calc(100% - 200px - 35px); margin-right: 30px;}
+footer .ft_sponser h3 {font-size: 2rem; font-weight: 300; color: #484689; letter-spacing: -1px;}
+
+
+/* 서브페이지 반응형 */
+@media screen and (max-width:768px){
+  /* header 공용 */
+  #header {height: 62px;}
+  .quickMenu .btn_menu {position: absolute; right: 0;}
+  .sub_sec .bg_w .container {padding: 40px 20px;}
+
+  /* section 타이틀 */
+  .snb {padding: 20px;}
+  .snb h3 {font-size: 1.8rem; padding-right: 20px; background-size:12px; line-height: 1.68;}
+  .snb .btn_next {display: none;}
+  .loginForm .formTop {width: 100%;}
+
+  /* swiff 개요 */
+  .swiff figure {float: none; width: 100%; padding: unset;}
+  .swiff .swiff_infoArea {float:none; width: 100%;padding: unset; margin: 50px 0;}
+  .swiff_infoArea .infoList > li {flex-direction: column; padding: 15px 0 10px;}
+  .infoList li .listTit {width: 100%; margin-left: unset; margin-bottom: 5px;}
+  .infoList li p:nth-child(2), .subList {padding-left: unset; border-left: none; opacity: 0.7; margin-bottom: 10px; font-size: 1.5rem;}
+  .subList li::before {margin-right: 8px;}
+  /* swiff-sub */
+  .aboutSwiff, .swiff_special {padding: 50px 20px; }
+  .sec_title {font-size: 2.8rem;}
+  .sec_subTit {margin-bottom: 15px;}
+  .aboutSwiff p:last-child, .specList li p:last-child{word-break: break-all;}
+
+  /* searchPage */
+  #searchPage > .bg_w > .container {width: 100%; padding: 40px 10px 50px;}
+  .searchWrap .tabList {gap:10px; margin:0 0 30px 10px;}
+  .tabList li button {font-size: 1.5rem; padding: 8px 10px;}
+  .tabBox {padding: unset; border: none;}
+  .totalList form {justify-content: flex-start; flex-direction: column; gap:0}
+  .tabBox select {width: 100%; line-height: 40px; height: 40px; }
+  .selectCustom input[type="text"] {width: 100%; box-sizing: border-box; padding-left: 20px; font-size: 1.5rem;}
+  .nation {padding: unset;}
+  .nation a {padding: 5px 20px; margin: 4px 5px 4px 0; font-size: 1.5rem;}
+  .tab_index {margin: unset; width: 100%;}
+  .tab_index ul li a {margin: 4px 6px;}
+  .btn_search {width: 40px; height: 40px; margin-right: 10px;}
+}

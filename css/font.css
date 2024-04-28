@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* 한글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/jejugothic.css');
+/* 제주 고딕 - font-family: 'Jeju Gothic', sans-serif;  */
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+/* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; } */
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+/* font-family: 'NanumSquareNeo'; */
+@import url('https://webfontworld.github.io/sandbox/SBAggro.css');
+/* font-family: 'SBAggro'; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 영문폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Montserrat', sans-serif; */

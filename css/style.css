@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import url(font.css);
+
+html {font-size: 0.625rem;}
+body {font-size: 1.6rem; font-family: 'Noto Sans KR', sans-serif;}
+
+/* 공통영역 */
+.inner {width: 85%; margin: 0px auto;}
+.visualArea .textBox {text-shadow: -1px -1px 0 #484689, 1px -1px 0 #484689, -1px 1px 0 #484689, 1px 1px 0 #484689;}
+.swiper .swiper-pagination-bullet {background: #fff;}
+/* header */
+.container{width: 100%; height: 70vh; background-image: linear-gradient(to right, #5d2e85, #484689); color: #fff;}
+header {margin-bottom: 2.5em;}
+header .hdTop {float: right; height: 6vh; margin-right: 7.5%;}
+header .hdTop > a {
+    float: left;
+    padding: 1.429em 0.214em 0.714em;
+    margin-left: 1.429em;
+    font-size: 1.4rem;
+}
+header .hdBottom .logo {float:left; width: 10%}
+
+header .fR {float: right; width: 75%;}
+header .fR .gnbArea {float: left; width: 84%; padding: 0.556em 0;}
+header .fR .gnbArea ul li {float: left; width: calc(100%/9); text-align: center;}
+header .fR .gnbArea ul li:first-child {margin-left: 0;}
+header .fR .gnbArea ul li a {font-size: 1.8rem; padding-bottom: 0.556em;  border-bottom: 2px solid transparent;}
+header .fR .gnbArea ul li a:hover {color: rgba(255,255,255,0.6); border-bottom: 2px solid  #fff;}
+header .fR .quickList {
+    float: right;
+    width: 15%;
+    padding: 0.556em 0;
+    line-height: 0.833em;
+    text-align: right;
+}
+header .fR .quickList a {
+    display: inline-block;
+    width: 34px; height: 34px;
+    background: url(../img/icon/ico_hd_quick.png) top left;
+    margin-left: 1.25em;
+}
+header .fR .quickList a:first-child {margin-left: 0;}
+header .fR .quickList .menu {background: url(../img/icon/menu24px.png) no-repeat center;}
+header .fR .quickList .quickScedule {background: url(../img/icon/ico_hd_quick.png) top left -34px;}
+
+/* visualArea */
+.visualArea .mainBanner{width: 85%; height: 60vh}
+.mainBanner .swiper-wrapper .swiper-slide img {float:left; max-width: 47%; height: auto;} 
+.mainBanner .swiper-wrapper .swiper-slide .textBox {
+    position: absolute;
+    top: 20%; right: 5%;
+    width: 45%;
+    text-align: center;
+}
+.mainBanner .swiper-wrapper .swiper-slide .textBox .bText {padding-bottom: 0.6em; font-size: 5rem; line-height: 1; font-weight: 700;}
+.mainBanner .swiper-wrapper .swiper-slide .textBox .sText {font-size: 2.8rem;}
+
+/* blank */
+.blank {clear: both; width: 100%; height: 100px; margin-bottom: 1.25em;} 
+
+/* contents */
+.programArea {position: relative;}
+.program {border-bottom: 1px solid #ccc; padding-bottom: 1.25em;}
+.program + .program {border-bottom: none;}
+.program h2 {position: absolute; top: 160px; left: -60px; font-family: 'Montserrat', sans-serif; font-weight:700; font-size: 8rem; transform: rotate(270deg);}
+.program .pgBox {position: relative; margin-left: 15vw; padding: 1.25em 0 1.25em;}
+.program .pgHeader {margin-bottom: 1em;}
+.program .pgHeader h3 {float: left; font-size: 3rem;}
+.program .pgHeader .btnMore {
+    float: left;
+    margin: 0.714em 0;
+    padding: 0.571em 0.714em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.357em;
+}
+
+/* pgList */
+.pgList .title {margin-top: 1em; font-size: 2rem; font-weight: 600;}
+.pgList .director {margin-top: 0.4em; font-size: 1.5rem; opacity: 0.7;}
+.pgHeader .btnArea {position: relative;}
+.swiper-button-next::after,.swiper-button-prev::after {display: none;} /* 기존 버튼 초기화 */
+.pgHeader .btnArea .swiper-button-prev {
+    position: absolute;
+    top: 50px; left: 50vw;
+    width: 6.25em;
+    height: 1.25em;
+    background: url(../img/icon/ico_film_prev.png) no-repeat center/cover;
+    opacity: 0.4;
+}
+.pgHeader .btnArea .swiper-button-next {
+    position: absolute;
+    top: 50px; right: 20vw;
+    width: 6.25em;
+    height: 1.25em;
+    background: url(../img/icon/ico_film_next.png) no-repeat center/cover;
+    opacity: 0.4;
+}
+.pgHeader .btnArea .swiper-button-prev:hover,.pgHeader .btnArea .swiper-button-next:hover {opacity: 1;}
+
+/* bannerArea */
+.bannerArea .banner {margin-bottom: 6.250em;}
+.bannerArea .banner .swiper-wrapper .swiper-slide > img {max-width: 100%; }
+.bannerArea .banner .swiper-wrapper .swiper-slide {position: relative;}
+.bannerArea .banner .swiper-wrapper .swiper-slide .bText {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.4rem;
+    font-weight: 500;
+    color:#fff;
+}
+
+/* newsArea */
+.newsArea {position: relative; margin: 0 15vw 3.125em;}
+.newsArea h3 {float:left; width: 6.667em; font-size: 3rem;}
+.newsArea h3:after {content:''; display: inline-block; width: 15px; height: 20px; margin-left: 1.25em; background: url(../img/icon/ico_news_list_on.png) no-repeat center/cover;}
+.newsArea .newsList {float: left; margin-left: 0.625em;}
+.newsArea .newsList li {margin-bottom: 1.563em;}
+.newsArea .newsList li a {font-size: 1.8rem; color: rgba(0,0,0,0.6);}
+.newsArea .newsList li a > span {
+    width: 3.333em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 0.2em;
+}
+.newsArea .newsList li a span:after {content:''; display: inline-block; width: 60px; height: 1px; margin: 0 2em; background: rgba(0,0,0,0.4); vertical-align: middle;}
+.newsArea h2 {
+    position: absolute;
+    top: 30%; right: 5%;
+    transform: rotate(90deg);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+/* searchArea */
+.searchArea {background: #efefef; padding: 1.25em;}
+.searchArea form {text-align: center; margin: 1.250em 0 2.5em;}
+input[type="search"] {padding: 0.625em 1.250em; border: 2px solid #ccc; border-radius: 5px; background: #efefef; color: #ccc;}
+.searchArea .postList > ul > li {
+    float: left;
+    width: calc(100%/6 - 30px); 
+    margin-left: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.searchArea .postList > ul > li:hover {background: rgba(255,255,255,0.2);}
+.searchArea .postList ul li:first-child {margin-left: 0;}
+.searchArea .postList ul li .postLink {padding: 0.625em;}
+.searchArea figure {position: relative; width: 100%; height: 250px; overflow: hidden; background: url(../img/main/post01.jpg) no-repeat top/cover; border-radius: 20px 20px 0 0;}
+.searchArea li:nth-child(2) figure {background: url(../img/main/post02.jpg) no-repeat center/cover;}
+.searchArea li:nth-child(3) figure {background: url(../img/main/post03.jpg) no-repeat center/cover;}
+.searchArea li:nth-child(4) figure {background: url(../img/main/post04.jpg) no-repeat center/cover;}
+.searchArea li:nth-child(5) figure {background: url(../img/main/post05.jpg) no-repeat center/cover;}
+.searchArea li:nth-child(6) figure {background: url(../img/main/post06.jpg) no-repeat center/cover;}
+
+.searchArea figure .tag {position: absolute; top: 10px; left: 10px; padding: 0.214em 0.357em; background: #405de6; font-size: 1.4rem; color: #fff; border-radius: 3px;}
+
+.searchArea .postText { overflow: hidden; height: 180px; padding: 1.333em 1.333em 2em; margin-bottom: 0.667em; font-size: 1.5rem; color: rgba(0,0,0,0.5);}
+.searchArea .postText .text{margin-bottom: 1.333em;}
+.postLink {height:30px; border-top: 1px solid #ccc;}
+.postLink li {float: left; padding: 0 1.25em 1.25em;}
+.postLink li span {color: rgba(0,0,0,0.5); font-size: 1.5rem;}
+.postLink li .heart:before {content: ''; display: inline-block; width:16px; height:16px; background: url(../img/icon/heart.png) no-repeat center/cover; opacity: 0.5; margin-right: 5px;}
+.postLink li .comment:before {content: ''; display: inline-block; width:16px; height:16px; background: url(../img/icon/comment.png) no-repeat center/cover; opacity: 0.5; margin-right: 5px;}
+.postLink li:last-child {float:right;}
+.postLink li .share{display:inline-block; width:16px; height:16px; background: url(../img/icon/share_square.png) no-repeat center/cover; opacity: 0.7;}
+
+.searchArea .btnMore {margin: 3.125em 0; text-align: center;}
+.searchArea .btnMore a {padding: 0.625em 2.5em; background: #3b3d40; border-radius: 5px; color: #fff; transition: all 0.3s;}
+.searchArea .btnMore a:hover {opacity: 0.4;}
+
+/* footer */
+footer .sponser {text-align: center; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+footer .sponser img {padding: 1.875em 0;}
+footer .ftCont {background: #efefef; padding: 6vh 15vw;}
+.ftCont .ftInfo {float:left; width: 55%;}
+
+.ftInfo .linkList li {float: left; margin-left: 1.875em;}
+.ftInfo .linkList li:first-child {margin-left: 0;}
+.ftInfo .linkList li a {font-size: 1.5rem; font-weight: 600; color:#4d3494;}
+.ftCont .ftInfo .text {font-size: 1.5rem; font-weight: 500; color: rgba(0,0,0,0.4); margin: 1.333em 0; line-height: 1.8;}
+.ftCont .ftInfo .text a, .ftCont .ftInfo .copy > a {color: #333; font-weight: 400;}
+.ftCont .ftInfo .copy {font-size: 1.4rem; color:rgba(0,0,0,0.4)}
+
+.ftCont .ftEmail {float: right; width: 40%;}
+.ftEmail h4 {font-size: 2rem; font-weight: 800; font-family: 'Montserrat', sans-serif; color:#4d3494}
+.ftEmail form {margin-bottom: 1.25em;}
+.ftEmail table {width: 100%;}
+.ftEmail table tr {border-bottom: 1px solid #afafaf;}
+.ftEmail table tr td button {float: right; border: 0; font-size: 1.5rem; font-weight: 800; font-family: 'Montserrat', sans-serif; color:#4d3494; padding-top: 0.667em;}
+.ftEmail table tr td button:after {
+    content: '';
+    display: inline-block;
+    width: 21px; height: 13px;
+    background: url(../img/icon/btn_submit_arrow.png) no-repeat center/cover;
+    margin-left: 2em;
+}
+input[type="text"], input[type="email"] {float:left; width: 70%; height: 36px; border: 0; background: #efefef;}
+input[type="text"]:focus, input[type="email"]:focus {outline: 0;}
+
+.ftEmail .snsList li {float: left; margin-left: 1.250em;}
+.ftEmail .snsList li:first-child {margin-left: 0;}
+.ftEmail .snsList li a {display: inline-block; width: 20px; height: 20px; background: url(../img/icon/ico_cmm.png) no-repeat left top; opacity: 0.6;}
+.ftEmail .snsList li a.instagram {background-position: top left -40px;}
+.ftEmail .snsList li a.facebook {background-position: top left -60px;}
+.ftEmail .snsList li a.naver {background-position: top left -100px;}
+.ftEmail .snsList li a.tistory {background-position: top left -80px;}
+.address {padding-top: 20px;} 
